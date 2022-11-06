@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LoadAndStoreTest {
+    LoadAndStore ls = new LoadAndStore();
 
     // write all these out too.
 
@@ -18,7 +19,10 @@ class LoadAndStoreTest {
 
     @Test
     void loadIntArrayFromFile() {
-        assertEquals(null, "");
+        String a = "5";
+        int expected = 1;
+
+        assertEquals(expected, ls.loadIntArrayFromFile(filename));
     }
 
     @Test
